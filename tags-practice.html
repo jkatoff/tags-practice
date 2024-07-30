@@ -5,17 +5,36 @@
 
 </head>
 <body>
-<h1>HTML Tags Cheat Sheet</h1>
+<h1 id="top-of-page">HTML Tags Cheat Sheet</h1>
 
-<h2>Headings</h2>
+<h2>Table of Contents</h2>
+<ul>
+    <li>
+        <a href="#heading">Headings</a>
+    </li>
+    <li>
+        <a href="#paragraph">Paragraphs</a>
+    </li>
+    <li>
+        <a href="#list">Lists</a>
+    </li>
+    <li>
+        <a href="#anchor">Anchors</a>
+    </li>
+    <li>
+        <a href="#emphasis">Text Emphasis</a>
+    </li>
+</ul>
+
+<h2 id="heading">Headings</h2>
 
 <p>Headings from `H1` to 'H6' identify blocks and sections  Every Page must have 1 H1</p>
 
-<h2>Pargraphs</h2>
+<h2 id="paragraph">Pargraphs</h2>
 
 <p>Paragraphs go in P tags</p>
 
-<h2>lists</h2>
+<h2 id="list">lists</h2>
 
 <h3>Unordered Lists</h3>
 <p> Unordered lists are marked with bullet points and go in UL tags.  Each list item is in an LI tag</p>
@@ -36,5 +55,51 @@
 <li>Go back and improve upon your conclusion</li>
 </ol>
 
+
+<h2 id="anchor">Anchors aka Links</h2>
+
+<p>Anchors tags create links to other pages.  The URLs go in the href attribute
+<a href="https://duckduckgo.com">Go to Duck Duck Go to search for more information</a>
+</p>
+
+<p>Setting Target= _blank will open the page in a new window  See
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">MDN</a>
+    for more details
+</p>
+
+
+
+<h2 id="emphasis">Text Emphasuis</h2>
+<h3>Italic</h3>
+<em>Use the em element to add extra emphasis or italics to a text portopn</em>
+
+<h3>bold</h3>
+<strong>Use Strong when you want to emphasize using bold</strong>
+
+<p>Anchor tags can also create links to a new location on the same page.  Instead of putting a url put the id of the element
+    <a href="#top-of-page">JUmp to the top of the page</a>
+</p>
+<h2>Organizing Content with `div` and `span`</h2>
+        <h3>`div`</h3>
+            <p>
+                The `div` element is a block element, so each `div` will show up on a new line.
+            </p>
+            <div>1st div</div>
+            <div>2nd div</div>
+            <div>3rd div</div>
+        <h3>`span`</h3>
+            <p>
+                The `span` element is an inline element, so there will be no line break between each `span`.
+            </p>
+            <span>1st span</span>
+            <span>2nd span</span>
+
+
+            <h2>Breaking text using the `br` tag</h2>
+            <p>
+                Golden rays cascade,<br>
+                Whispers of a gentle breeze—<br>
+                Nature's warm embrace.<br>
+            </p>
 </body>
 </html>
